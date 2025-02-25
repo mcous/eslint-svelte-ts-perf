@@ -1,0 +1,23 @@
+{
+  "name": "eslint-svelte-ts-perf",
+  "version": "0.0.1",
+  "scripts": {
+    "prepare": "node scripts/prepare.js 1000",
+    "check": "svelte-check",
+    "lint:svelte:fast": "eslint \"src/lib/**/*.svelte\"",
+    "lint:svelte:slow": "eslint -c eslint.slow.config.js \"src/lib/**/*.svelte\"",
+    "lint:ts": "eslint -c eslint.ts.config.js \"src/lib/**/*.ts\""
+  },
+  "type": "module",
+  "devDependencies": {
+    "0x": "^5.8.0",
+    "@types/node": "^22.13.5",
+    "eslint": "^9.21.0",
+    "eslint-plugin-svelte": "3.0.0-next.18",
+    "svelte": "^5.20.4",
+    "svelte-check": "^4.1.4",
+    "svelte-eslint-parser": "1.0.0-next.13",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.25.0"
+  }
+}
