@@ -24,7 +24,7 @@ time pnpm run lint:ts
 time pnpm run lint:svelte:fast
 
 # Run linting with types enabled
-# Takes about ~45 seconds
+# Takes about ~15 seconds
 time pnpm run lint:svelte:slow
 ```
 
